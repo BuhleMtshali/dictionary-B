@@ -5,11 +5,19 @@ body {
   font-family: "Roboto", serif;
 }
 .container {
-  width: 600px;
+  width: 500px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
+  text-align: center;
+  flex-direction: column;
   justify-content: center;
   background-color: #f8f9fa;
   align-content: center;
+}
+h1 {
+  color: #200c64;
+}
+i {
+  color: #f72585;
 }
