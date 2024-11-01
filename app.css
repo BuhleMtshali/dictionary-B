@@ -4,8 +4,11 @@
 body {
   font-family: "Roboto", serif;
 }
+*:focus {
+  outline: none;
+}
 .container {
-  width: 500px;
+  width: 350px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -14,10 +17,17 @@ body {
   justify-content: center;
   background-color: #f8f9fa;
   align-content: center;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 15px;
 }
 h1 {
-  color: #200c64;
+  color: #2c2a4a;
+  margin-top: 10px;
 }
 i {
-  color: #f72585;
+  color: #a172fd;
+}
+input {
+  padding: 10px 15px;
 }
