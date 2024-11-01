@@ -20,6 +20,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,7 +29,7 @@
         <i class="fa-solid fa-book-bookmark"></i>
       </h1>
       <div class="form">
-        <form>
+        <form id="form">
           <input
             type="search"
             id="search-input"
@@ -39,19 +40,9 @@
         </form>
         <!-- end of form div -->
       </div>
-      <div id="results">
-        <h3 class="word">hello</h3>
-        <audio controls>
-          <source
-            src="//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
-          />
-        </audio>
-        <p class="def">used as a greeting or to begin a phone conversation.</p>
-        <p class="example">
-          <i class="fa-regular fa-lightbulb fa-shake"></i> 'hello there, Katie!'
-        </p>
-      </div>
+      <div id="results"></div>
       <!-- end of container div -->
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
