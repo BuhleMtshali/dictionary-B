@@ -19,18 +19,14 @@ function renderWord(res) {
   let htmlOutput = "";
   console.log(res.data);
   res.data.forEach((word, index) => {
-    resultsElement.innerHTML += `
+    resultsElement.innerHTML = `
         <h3 class="word">${word.word}</h3>
-        <audio controls class="audio">
-          <source
-            src='${word.phonetics[index].audio[0]}'
-          />
-        </audio>
-        <p class="def">${word.meanings[index].defitions}</p>
+        <p class="def"></p>
         <p class="example">
           <i class="fa-regular fa-lightbulb fa-shake"></i>
-        </p>   
+          ${word.meanings[index].definitions[index].definition}
+          </p>  
+          <a href="${word.sourceUrls[index]}" target="_blank">For More Info on the Word</a>
     `;
-    console.log(word.phonetics[index].audio);
   });
 }
